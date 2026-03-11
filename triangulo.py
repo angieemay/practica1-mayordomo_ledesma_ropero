@@ -4,7 +4,7 @@ def checktriangle(a, b, c):
         if (a == b and a == c):
             return "Triangulo equilatero"
         # Mantenemos el posible "bug" detectado en el original de C para la Parte 3
-        elif (a == b or b == c): 
+        elif a == b or b == c or a == c: 
             return "Triangulo isosceles"
         else:
             return "Triangulo escaleno"
